@@ -21,7 +21,7 @@ class _PhotosPageState extends State<PhotosPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Gallery Images'),
+        title: const Text('Gallery Images Pixabay'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -67,9 +67,23 @@ class _PhotosPageState extends State<PhotosPage> {
 }
 
 Widget photoCard(String url) {
-  return Card(
-    child: Image(
-      image: NetworkImage(url),
+  
+  return Card(    
+    child: Row(
+      children: [
+        Image(
+          image: NetworkImage(url),
+        ),
+
+        Image(
+          image: NetworkImage(url),
+        ),       
+      ],
     ),
+    
+  //    Image(
+  //     image: NetworkImage(url),
+  //   ),
+  // 
   );
 }
