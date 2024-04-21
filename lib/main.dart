@@ -90,10 +90,9 @@ class _MyGalleryState extends State<MyGallery> {
             child: Image.network(
               _imageDataList[index].imageUrl,
               fit: BoxFit.cover,
-            ),               
-   
-          );
-        
+            ),
+           
+          );  
         },
       ),
     );
